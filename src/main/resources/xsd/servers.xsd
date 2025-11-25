@@ -4,7 +4,6 @@
            targetNamespace="http://example.com/servers"
            elementFormDefault="qualified">
 
-    <!-- Type pour le statut du serveur -->
     <xs:simpleType name="serverStatus">
         <xs:restriction base="xs:string">
             <xs:enumeration value="TRUE"/>
@@ -12,7 +11,6 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <!-- Type pour représenter un serveur -->
     <xs:complexType name="server">
         <xs:sequence>
             <xs:element name="id" type="xs:long" minOccurs="0"/>
@@ -22,7 +20,6 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- Requête pour créer un serveur -->
     <xs:element name="createServerRequest">
         <xs:complexType>
             <xs:sequence>
@@ -31,7 +28,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour créer un serveur -->
     <xs:element name="createServerResponse">
         <xs:complexType>
             <xs:sequence>
@@ -40,7 +36,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Requête pour lister tous les serveurs -->
     <xs:element name="getAllServersRequest">
         <xs:complexType>
             <xs:sequence>
@@ -48,7 +43,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour lister tous les serveurs -->
     <xs:element name="getAllServersResponse">
         <xs:complexType>
             <xs:sequence>
@@ -57,7 +51,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Requête pour démarrer un serveur -->
     <xs:element name="startServerRequest">
         <xs:complexType>
             <xs:sequence>
@@ -66,7 +59,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour démarrer un serveur -->
     <xs:element name="startServerResponse">
         <xs:complexType>
             <xs:sequence>
@@ -75,7 +67,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Requête pour arrêter un serveur -->
     <xs:element name="stopServerRequest">
         <xs:complexType>
             <xs:sequence>
@@ -84,7 +75,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour arrêter un serveur -->
     <xs:element name="stopServerResponse">
         <xs:complexType>
             <xs:sequence>
@@ -93,7 +83,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Requête pour supprimer un serveur -->
     <xs:element name="deleteServerRequest">
         <xs:complexType>
             <xs:sequence>
@@ -102,7 +91,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour supprimer un serveur -->
     <xs:element name="deleteServerResponse">
         <xs:complexType>
             <xs:sequence>
