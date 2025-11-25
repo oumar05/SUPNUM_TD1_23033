@@ -67,7 +67,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Requête pour arrêter un serveur -->
     <xs:element name="stopServerRequest">
         <xs:complexType>
             <xs:sequence>
@@ -76,7 +75,6 @@
         </xs:complexType>
     </xs:element>
 
-    <!-- Réponse pour arrêter un serveur -->
     <xs:element name="stopServerResponse">
         <xs:complexType>
             <xs:sequence>
