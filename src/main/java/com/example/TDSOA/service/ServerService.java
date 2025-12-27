@@ -19,9 +19,7 @@ public class ServerService {
                 .orElseThrow(() -> new RuntimeException("Serveur non trouvé avec l'ID : " + id));
     }
     
-    /**
-     * Créer un nouveau serveur
-     */
+    
     public Server createServer(Server server) {
         if (serverRepository.existsByName(server.getName())) {
             throw new RuntimeException("Un serveur avec ce nom existe déjà : " + server.getName());
