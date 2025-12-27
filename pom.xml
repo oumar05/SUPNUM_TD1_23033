@@ -30,13 +30,11 @@
 		<java.version>25</java.version>
 	</properties>
 	<dependencies>
-		<!-- Dépendance SOAP Web Services -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 		
-		<!-- Pour la base de données -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -48,7 +46,6 @@
 			<scope>runtime</scope>
 		</dependency>
 		
-		<!-- Pour générer les classes Java depuis XSD -->
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
@@ -59,7 +56,6 @@
 			<artifactId>jaxb-runtime</artifactId>
 		</dependency>
 		
-		<!-- Dépendance WSDL pour la génération automatique -->
 		<dependency>
 			<groupId>wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
@@ -79,7 +75,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
-			<!-- Plugin pour générer les classes Java depuis XSD -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxb2-maven-plugin</artifactId>
